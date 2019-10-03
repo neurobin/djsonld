@@ -5,7 +5,7 @@ import sys
 from codecs import open
 from setuptools import find_packages, setup
 
-sys.path[0:0] = ['jsonld']
+sys.path[0:0] = ['djsonld']
 
 from version import __version__
 
@@ -18,14 +18,14 @@ def get_readme(filename):
         pass
     return content
 
-setup(name="jsonld",
+setup(name="djsonld",
       version=__version__,
       author="Md. Jahidul Hamid",
       author_email="jahidulhamid@yahoo.com",
       description="Get jsonld for a webpage",
       license="BSD",
       keywords="django cms content management system",
-      url="https://github.com/neurobin/jsonld",
+      url="https://github.com/neurobin/djsonld",
       packages=find_packages(),
       long_description=get_readme("README.md"),
       long_description_content_type="text/markdown",
@@ -39,5 +39,5 @@ setup(name="jsonld",
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
       ],
-      install_requires=[],
+      install_requires=["django>=2.2.1",],
   )

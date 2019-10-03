@@ -1,0 +1,4 @@
+#!/bin/sh
+#. venv/bin/activate
+#. /home/jahid/venvs/py3/bin/activate
+. /home/jahid/venvs/pypy3.6/bin/activate
